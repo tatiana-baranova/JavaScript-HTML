@@ -17,3 +17,14 @@
 
 // console.log(location.host);
 
+
+// for (let i = 0; i < document.body.childNodes.length; i++){
+//     console.log(document.body.childNodes[i]);
+// }
+// let content = document.getElementById("content");
+let elements = document.getElementsByTagName("h1");
+// console.log(content);
+
+for (let i = 0; i < elements.length; i ++){
+    console.log(elements[i].innerHTML);
+}
