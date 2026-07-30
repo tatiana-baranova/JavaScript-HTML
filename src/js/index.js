@@ -22,9 +22,24 @@
 //     console.log(document.body.childNodes[i]);
 // }
 // let content = document.getElementById("content");
-let elements = document.getElementsByTagName("h1");
-// console.log(content);
 
-for (let i = 0; i < elements.length; i ++){
-    console.log(elements[i].innerHTML);
-}
+// let elements = document.getElementsByTagName("h1");
+
+// for (let i = 0; i < elements.length; i ++){
+//     console.log(elements[i].innerHTML);
+// }
+
+// let allClasses = document.getElementsByClassName("text");
+// console.log(allClasses.length);
+
+// let username = document.getElementsByName("username")[0];
+// console.log(username);
+
+
+let element = document.querySelector("ul.list > li > div.some-info > span");
+let parentLi = element.closest("li");
+
+// parentLi.innerHTML = "<p>Information</p>";
+element.innerText = "Some new text";
+console.log(parentLi.innerHTML);
+
