@@ -1,9 +1,9 @@
 let number = 8;
 
-let userNumber = Number(prompt('Enter a number: '));
+let userNumber = Number(prompt("Введіть число:"));
 
 while(userNumber !== number){
-    alert('Try again!');
-    userNumber = Number(prompt('Enter a number: '));
+    console.log("Ви ввели неправильне число. Спробуйте ще раз!");
+    userNumber = Number(prompt("Введіть число: "));
 }
-alert('You guessed the number: ' + number);
+console.log("Правильно! Ви ввели число 8.");
