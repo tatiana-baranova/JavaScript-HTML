@@ -36,28 +36,28 @@
 // console.log(username);
 
 
-let element = document.querySelector("ul.list > li > div.some-info > span");
-let parentLi = element.closest("li");
+// let element = document.querySelector("ul.list > li > div.some-info > span");
+// let parentLi = element.closest("li");
 
 // parentLi.innerHTML = "<p>Information</p>";
-element.innerText = "Some new text";
+// element.innerText = "Some new text";
 // console.log(parentLi.innerHTML);
 
-let username = document.querySelector("input[type='text']");
+// let username = document.querySelector("input[type='text']");
 
 
-if (username !== null) {
-    username.value = "Anna";
+// if (username !== null) {
+//     username.value = "Anna";
 
-    username.setAttribute("type", "color");
+//     username.setAttribute("type", "color");
 
-    if(username.hasAttribute("date"))
-        console.log(username.getAttribute("date"));
+//     if(username.hasAttribute("date"))
+//         console.log(username.getAttribute("date"));
 
-    username.removeAttribute("date");
-    username.removeAttribute("name");
+//     username.removeAttribute("date");
+//     username.removeAttribute("name");
 
-}
+// }
 
 
 
