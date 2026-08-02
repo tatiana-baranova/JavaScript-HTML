@@ -50,3 +50,15 @@ body{
 .link{
     color:rgba(86, 8, 83, 0.952)
 }
+
+#tap{
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(4, 62, 57, 0.94);
+    border-radius: 50%;
+    transition: all 200ms ease;
+}
