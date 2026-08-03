@@ -50,7 +50,6 @@ body{
 .link{
     color:rgba(86, 8, 83, 0.952)
 }
-
 #tap{
     position: fixed;
     left: 0;
@@ -61,4 +60,59 @@ body{
     background-color: rgba(4, 62, 57, 0.94);
     border-radius: 50%;
     transition: all 200ms ease;
+}
+.form-comment{
+    margin: 50px auto;
+    width: 500px;
+    border: 4px solid rgba(4, 62, 57, 0.94);
+    border-radius: 10px;
+}
+#comments-form,
+.comments{
+    width: 400px;
+    margin: 50px auto;
+}
+#comments-form input, #comments-form textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#comments-form textarea{
+    resize: none;
+    height: 100px;
+}
+
+#comments-form button{
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(13, 126, 102);
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    cursor: pointer;
+}
+#comments-form button:hover{
+    background-color: rgb(3, 46, 25);
+    border: white;
+    transition: all 0.3s ease;
+}
+#error:not(:empty){
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(13, 126, 102);
+}
+
+.comments h3{
+    margin-bottom: 10px;
+    color:rgb(32, 67, 60)
+}
+
+.comments h3 span{
+    font-weight: bold;
+    color:rgb(21, 198, 162)
 }
