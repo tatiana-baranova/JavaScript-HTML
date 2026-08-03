@@ -40,3 +40,13 @@ btnForm.onclick = () => {
     // form.username.value = '';
 
 } 
+
+function deleteComment(id){
+    document.querySelector("#block-" + id).remove();
+    countComments--;
+    document.querySelector('#count-comm').innerText = countComments;
+
+    if(countComments === 0){
+        document.querySelector('#comments').innerHTML = 'No comments yet. Be the first to comment!';
+    }
+}
