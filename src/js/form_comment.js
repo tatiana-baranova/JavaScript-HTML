@@ -17,10 +17,21 @@ btnForm.onclick = () => {
     error.innerText = '';
 
     //Set new value for counting comments
+    if(countComments === 0 ){
+        document.querySelector('#comments').innerHTML = '';
+    }
+
     countComments++;
     document.querySelector('#count-comm').innerText = countComments;
     
 
     //Create new comment
-    
-}
+    let newComment = "<div class='comment'>" +
+        "<p class='username'>" + form.username.value + "</p>" +
+        "<p class='comment-text'>" + form.comment.value + "</p>" +
+    "</div>";
+    document.querySelector('#comments').insertAdjacentHTML('afterbegin', newComment);
+
+    // Clear form values
+    form.comment.value = '';
+} 
