@@ -116,3 +116,31 @@ body{
     font-weight: bold;
     color:rgb(21, 198, 162)
 }
+
+.comments .comment{
+    width: 400px;
+    background-color: rgba(155, 230, 215, 0.471);
+    border-radius: 5px;
+    border: 1px solid rgba(4, 62, 57, 0.94);
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+.comments .comment .delete{
+    float: right;
+    cursor: pointer;
+    color: rgb(123, 7, 7);
+    font-weight: bold;
+
+}
+.comments .comment .delete:hover{
+    color: rgb(66, 12, 12);
+
+}
+.comments .comment .username{
+    font-weight: bold;
+    color:rgb(2, 60, 49)
+}
+
+.comments .comment .comment-text{
+    margin-top: 6px;
+}
