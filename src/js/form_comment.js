@@ -14,7 +14,13 @@ btnForm.onclick = () => {
         error.innerText = 'Comment must be at least 10 characters long!';
         return false;
     }
-    
     error.innerText = '';
+
+    //Set new value for counting comments
+    countComments++;
+    document.querySelector('#count-comm').innerText = countComments;
+    
+
+    //Create new comment
     
 }
