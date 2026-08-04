@@ -30,5 +30,12 @@ const prox = new Proxy(car, {
             return true
         else
             return false
+    },
+    deleteProperty(target, prop){
+        if(prop !== 'model')
+            delete target[prop]
+        else
+            throw Error('The model cannot be removed')
     }
 })
+
