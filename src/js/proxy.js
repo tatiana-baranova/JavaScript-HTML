@@ -39,3 +39,22 @@ const prox = new Proxy(car, {
     }
 })
 
+const user = {
+    first: 'John',
+    last: "Doe",
+    age: 25
+}
+
+const person = new Proxy(user, {
+    get(target, prop){
+        if(prop in target)
+            return target[prop]
+        else {
+            return prop.split('_').map(part => {
+                return target[part]
+            }).join(' ')
+        }
+    }
+})
+
+console.log(person.first_last);
